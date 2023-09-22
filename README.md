@@ -1,6 +1,7 @@
 # MATH10017 Algorithms and Programming in C(++) and R
 
 TL,DR; This unit teaches basic language features of C, R and C++. 
+
 **Lecturer**: Song Liu (song.liu@bristol.ac.uk)
 
 **Teaching Assistants**: 
