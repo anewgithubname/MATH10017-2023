@@ -1,10 +1,14 @@
 # MATH10017 Algorithms and Programming in C(++) and R
 
 TL,DR; This unit teaches basic language features of C, R and C++. 
-
 **Lecturer**: Song Liu (song.liu@bristol.ac.uk)
 
-**Teaching Assistant**: Brendan Murphy (brendan.murphy@bristol.ac.uk)
+**Teaching Assistants**: 
+   - Harsh Patil (cr22307@bristol.ac.uk)
+   - Charles Harris (charles.harris@bristol.ac.uk)
+   - Luke Turvey (jf19820@bristol.ac.uk)
+   - Álvaro Gutiérrez Cáceres (gutierrez.caceres@outlook.com)
+
 
 -----------
 ## Lecture Materials (Download slides to your PC before reading them!)
