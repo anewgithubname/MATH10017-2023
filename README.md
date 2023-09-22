@@ -9,7 +9,6 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - Luke Turvey (jf19820@bristol.ac.uk)
    - Álvaro Gutiérrez Cáceres (gutierrez.caceres@outlook.com)
 
-
 -----------
 ## Lecture Materials (Download slides to your PC before reading them!)
 
