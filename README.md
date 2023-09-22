@@ -17,6 +17,8 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [NEW! How to use VSCode on Mac with Debugging](VS-code-for-mac.md)
    - [Commandline Tips](commandline_tips/tips.md)
 
+2. Lecture slides: [Functions](lecs/lec2.pdf)
+   - [pre-lab session task!](labs/debugging.pptx)
 
 ## Extra Learning Materials
 
