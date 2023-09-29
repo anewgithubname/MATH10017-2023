@@ -8,7 +8,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - Harsh Patil (cr22307@bristol.ac.uk)
    - Charles Harris (charles.harris@bristol.ac.uk)
    - Luke Turvey (jf19820@bristol.ac.uk)
-   - Álvaro Gutiérrez Cáceres (gutierrez.caceres@outlook.com)
+   - Álvaro Gutiérrez Cáceres (a.gutierrezcaceres@bristol.ac.uk)
 
 -----------
 ## Lecture Materials (Download slides to your PC before reading them!)
