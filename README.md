@@ -20,6 +20,8 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [ChatGPT Policy](misc/llm.md)
 2. Lecture slides: [Functions](lecs/lec1.pdf)
    - [pre-lab session task](labs/debugging.pptx)
+   - [Lab Tasks](labs/lab1_functions.pptx)
+   - [Lab Files](labs/lab1.zip)
 
 
 ## Extra Learning Materials
