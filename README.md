@@ -22,7 +22,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [pre-lab session task](labs/pre-lab1-debugging.pptx)
    - [Lab Tasks](labs/lab1_functions.pptx)
    - [Lab Files](labs/lab1.zip)
-
+   - [Tutorial](tutorials/Tutorial%201.pptx)
 
 ## Extra Learning Materials
 
