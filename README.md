@@ -18,7 +18,6 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [How to use VSCode on Mac](VS-code-for-mac.md)
    - [Commandline Tips](commandline_tips/tips.md)
    - [ChatGPT Policy](misc/llm.md)
-   - 
 2. Lecture slides: [Functions](lecs/lec1.pdf)
    - [pre-lab session task](labs/pre-lab1-debugging.pptx)
    - [Lab Tasks](labs/lab1_functions.pptx)
