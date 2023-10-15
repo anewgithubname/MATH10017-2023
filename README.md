@@ -22,7 +22,9 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [Lab Files](labs/lab1.zip), [Solution](sols/lab1_sol.zip)
    - [Tutorial](tutorials/Tutorial%201.pptx), [Solution](sols/tutorial_week2_solution.c)
 3. Lecture slides: [Flow Control](lecs/lec2.pdf)
-   - [Lab Files](labs/lab2.zip)
+   - [Lab Files](labs/lab2.zip), [Solution](sols/lab_2_sol.zip)
+4. Lecture Slides: [Advanced Flow Control](lecs/lec3.pdf)
+   - [Lab Files](labs/lab3.zip)
 
 ## Extra Learning Materials
 
