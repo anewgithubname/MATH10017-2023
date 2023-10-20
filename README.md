@@ -26,7 +26,10 @@ TL,DR; This unit teaches basic language features of C, R and C++.
 4. Lecture Slides: [Advanced Flow Control](lecs/lec3.pdf)
    - [Lab Files](labs/lab3.zip)
    - [Tutorial](tutorials/tutorial_controlflow.pdf)
-
+5. Lecture Slides: [Time Complexity, Recursion and Memory Allocation](lecs/lec4.pdf)
+   - [Lab Files](labs/lab4.zip)
+   - [How to see Stack Memory Layout from VSCode](labs/lab4_video.pptx)
+    
 ## Extra Learning Materials
 
 1. [CS50](https://www.youtube.com/c/cs50) is Harvard University's introductory course to computer science and the art of programming. 
