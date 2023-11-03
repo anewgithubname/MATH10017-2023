@@ -27,7 +27,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [Lab Files](labs/lab3.zip), [Solution](sols/lab_3_sol.zip)
    - [Tutorial](tutorials/tutorial_controlflow.pdf), [Solutions](https://github.com/anewgithubname/MATH10017-2023/tree/main/sols/tutorial_controlflow_solutions)
 5. Lecture Slides: [Time Complexity, Recursion and Memory Allocation](lecs/lec4.pdf)
-   - [Lab Files](labs/lab4.zip)
+   - [Lab Files](labs/lab4.zip), [Solution](sols/lab_4_sol.zip)
    - [How to see Stack Memory Layout from VSCode](labs/lab4_video.pptx)
     
 6. [Coursework 1](lecs/CW1.pdf)
@@ -35,6 +35,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [Tutorial](tutorials/tutorial3.pdf), [Solution](sols/tutorial3_solution.c)
 
 7. Lecture Slides: [Arrays](lecs/lec6.pdf)
+   - [Lab Files](labs/lab5.zip)
 
 ## Extra Learning Materials
 
