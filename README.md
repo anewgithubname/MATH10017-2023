@@ -42,6 +42,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [Tutorial](tutorials/tutorial4.pdf), [Tutorial File](tutorials/tutorial4.c), [Tutorial Solution](sols/tutorial_4_solution.c)
 
 9. Lecture Slides: [Pointer 2](lecs/lec8.pdf)
+   - [Lab Files](labs/lab_7.zip)
 
 ## Extra Learning Materials
 
