@@ -31,7 +31,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
    - [How to see Stack Memory Layout from VSCode](labs/lab4_video.pptx)
     
 6. [Coursework 1](lecs/CW1.pdf)
-   - [CW Files](labs/cw1.zip)
+   - [CW Files](labs/cw1.zip), [Solution](sols/cw1.c)
    - [Tutorial](tutorials/tutorial3.pdf), [Solution](sols/tutorial3_solution.c)
 
 7. Lecture Slides: [Arrays](lecs/lec6.pdf)
