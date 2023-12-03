@@ -38,10 +38,13 @@ int find_second_smallest(int arr[], int len){
     min1 = arr[1];
     min2 = arr[0];
   }
-  for(int i = 0; i < len; i++){
+  for(int i = 1; i < len; i++){
     if(arr[i] < min1){
       min2 = min1; // old min1 value is now second smallest
       min1 = arr[i]; 
+    }
+    else if (arr[i] < min2){
+        min2 = arr[i];
     }
   }
   return min2;
@@ -227,7 +230,7 @@ int main(){
   // CREATE TEST ARRAYS
   int arr1[] = {1,2,3,4,5};
   int len1 = 5;
-  int arr2[] = {3,2,1,1,3}; // DEFINE ARRAY WITH REPEATED MAX AND MIN VALUES
+  int arr2[] = {1,3,2,4,3}; // DEFINE ARRAY WITH REPEATED MAX AND MIN VALUES
   int len2 = 5;
   int arr3[] = {-100, -99, 0, 234}; // DEFINE ARRAY WITH POSITIVE AND NEGATIVE NUMBERS
   int len3 = 4;
