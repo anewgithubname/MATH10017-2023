@@ -51,7 +51,7 @@ TL,DR; This unit teaches basic language features of C, R and C++.
 11. Lecture Slides: [CW2 and Revision](lecs/lec10.pdf)
     - [Lab Task](labs/lab9.pdf)
     - [Lab Files](labs/lab9.zip), [Solutions](sols/lab9_sol.zip)
-    - [CW2 files](labs/cw2.zip)
+    - [CW2 files](labs/cw2.zip), [Reference Solution](sols/cw2_sol.c)
     - [Example Output](labs/cw2_output.txt)
 
 ## Extra Learning Materials
