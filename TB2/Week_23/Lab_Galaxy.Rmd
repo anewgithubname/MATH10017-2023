@@ -1,0 +1,176 @@
+---
+title: "Lab on Galaxy NGC 7531"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+# Introduction
+
+In machine learning, one common task is [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis): using the input data, we want to predict the output. This is a typical machine learning task: Given students' first year score, I want to predict their final year grades. Given patients' physical condition, doctors want to predict their life expectancy etc...
+
+Today, we will play with an astronomical dataset. It records the relative positions of stars in Galaxy NGC 7531. We would like to **use these location information** to predict the **velocity** of stars.
+
+We will use this data set to practice using data frames on a real-world application.
+
+
+
+![Galaxy NGC 7531, from Wikipedia.](../Images/NGC_7531_GALEX_WikiSky.jpg){width="250"}
+
+
+
+
+## Loading the data
+
+The data frame has been downloaded and processed for you. Run the following command to load it:
+```{r}
+set.seed(1)
+galaxy <- read.table("galaxy")
+```
+
+Let us look at a summary of our dataset:
+
+```{r}
+dim(galaxy)
+head(galaxy)
+summary(galaxy)
+```
+
+The data frame contains **323** observations and **5** columns. All entries are numeric. The last column is the velocity we want to predict. The first four variables (columns) are information used to express the relative positions of stars in a galaxy. More information on the dataset can be found [[here]{.underline}](https://hastie.su.domains/ElemStatLearn/datasets/galaxy.info.txt).
+
+## Split Data
+
+Let us split the dataset into two parts: Training and testing. **Our target is using the training dataset to make predictions for each observation in the testing dataset.** 
+<!-- For example, in our TB1 project, $X$ and $Y$ matrices are our training dataset and $T$ is the testing dataset (without output). -->
+Here, the output is `velocity` while the inputs are the other 4 columns.
+First, let us randomly select 200 observations from `galaxy` and store them in a new data frame called `train_data`.
+
+```{r}
+# This produce a random integer vector, containing random integers 
+# between sequence 1 to 323. 
+idx <- sample(1:323,200) 
+print(idx)
+
+# Your code here for creating train_data here:
+```
+
+Now, select the rest of the observations from `galaxy` and store them in a data frame `test_data`:
+```{r}
+# Hint
+a <- matrix(1:16, 4, 4)
+
+# The following excludes the 1st and 3rd row from a matrix A:
+b <- a[-c(1, 3), ]
+
+# Your code for creating test_data here here:
+```
+
+Now inspect your data frames from the environment pane. Do they have correct dimensions?
+
+## Standardize the data
+
+Let us normalize our dataset **inputs** before making predictions.
+
+Write a function which takes one vector `v` as input and returns a standardized vector `s`:
+
+$$
+s = (v-\mu)/\sigma, 
+$$
+
+where $\mu$ is the mean of `v` and $\sigma$ is the standard deviation of `v`.
+
+```{r}
+standardize  <- function(v){
+  # Write your code here:
+}
+```
+
+Now test whether it works on a toy vector (say `1:100`):
+
+```{r}
+# Write your code here.
+# Hint if the standardization worked then the output vector should have mean
+# zero and variance 1
+```
+
+Apply the `standardize` function to **the first 4 columns** of `test_data` (the 5th column is the output, we don't want to standardize it!). Assign the result back to `test_data`.
+Hint: your code should look like `test_data[, 1:4] <- apply(…)`. 
+
+```{r}
+# Write your code here:
+```
+
+Check the mean and standard deviation of each columns of `test_data`. Have they been successfully standardized?
+
+```{r}
+# Write your code here:
+```
+
+Similarly, apply the `standardize` function to **the first 4 columns** of `train_data`.
+
+```{r}
+# Write your code here:
+```
+Check that it worked:
+```{r}
+# Write your code here:
+```
+
+## Predict!
+
+Let us first create a prediction function. It predicts the output (velocity) given a single input vector. We will use a nearest neighbour approach. Let $x$ be the four-dimensional vector of inputs for a star. Compute the Euclidean distance between $x$ and the input vectors of all stars in the training data. Find the $nn$ ($nn$ should be an integer between 1 and `nrow(train_data)`) stars with the smallest Euclidean distances from $x$ (the neighbours). The predicted velocity should be the average of the neighbours' velocities. **NOTE**: x should not include the 5th column (the velocity!!).
+
+```{r}
+predict_vel <- function(x, nn){
+  # 1. find the 5 nearest neighbours of x in train_data
+  # 2. average the velocities of the 5 nearest neighbours and 
+  # 3. use that as the predicted velocity
+  # YOUR CODE HERE
+  
+}
+```
+
+Apply this function to **all the observations** in `test_data`. Store the result to a new column `pred` in `test_data`. Use `nn = 5`.
+
+```{r}
+# Hint: recall how to add a new column to a data frame
+a <- data.frame(x = c(1,2,3))
+# Here we are adding the new column "newcol" to "a"
+a$newcol <- c(4,5,6)
+
+# Write your code here:
+
+```
+
+Compute [the mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error) of your predictions. That's a numerical quantification of how good your predictions are (the lower the better).
+
+```{r}
+# Write your code here
+
+```
+
+Is it any good? Try to visually compare the observed and the predicted velocities:
+```{r}
+# Write your code here
+
+```
+
+Now consider a naive prediction method: I take the average of the training output `train_data$velocity` , and use it as the prediction of the velocity of the testing dataset. What is the mean squared error of this naive approach?
+
+```{r}
+# Write your code here (one line)
+
+```
+
+How much better our prediction method is than the naive approach in terms of mean squared error?
+```{r}
+# Write your code here
+ 
+```
+
+Check how the performance of your model varies as you change the number of neighbours `nn`.
+NOTE: do not define a very fine grid of values for `nn` as the computation might be quite slow.
+```{r}
+# Write your code here
+
+```
